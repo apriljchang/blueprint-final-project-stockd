@@ -150,7 +150,7 @@ const sortedItems = [...items].sort((a, b) => {
   return (
     <div>
       <h1>stock'd</h1>
-      <p>your handy pantry tracker app!</p>
+      <p id = "main-description">your handy pantry tracker app!</p>
       <button id = "add-item" onClick = {() => setShowForm(true)}>add item</button>
       
       <section id = "pantry">
