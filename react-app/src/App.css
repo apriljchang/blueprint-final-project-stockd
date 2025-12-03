@@ -96,6 +96,26 @@ html, body {
   font-style: italic;
 }
 
+#add-item {
+  background-color: #d8e2dc; 
+  color: #333;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#add-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px #8a978f;
+  background-color: #e3ebe7;
+}
+
+
 .form-page {
   max-width: 700px;
   width: 100%;
@@ -229,4 +249,67 @@ html, body {
   padding-top: 6px;
   margin-top: 4px;
 }
+
+/* --- Quantity Editor Buttons (+ / -) --- */
+
+.quantity-editor {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.quantity-editor button {
+  background-color: #d8e2dc;
+  color: #4a4a4a;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.quantity-editor button:hover {
+  background-color: #c7d4ce;
+  transform: translateY(-2px);
+}
+
+
+.action-panel button {
+  display: block;
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 1rem; 
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Delete button */
+.action-panel button:nth-of-type(2) {
+  background-color: #d8e2dc;
+  color: #5a0000;
+}
+
+.action-panel button:nth-of-type(2):hover {
+  background-color: #c7d4ce;
+  transform: translateY(-2px);
+}
+
+/* Change category button */
+.action-panel button:nth-of-type(3) {
+  background-color: #ffd09b;
+  color: #704f00;
+}
+
+.action-panel button:nth-of-type(3):hover {
+  background-color: #ffc17a;
+  transform: translateY(-2px);
+}
+
 
